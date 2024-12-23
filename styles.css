@@ -307,6 +307,62 @@ td div {
     }
 }
 
+/* Testimonials */
+#testimonials {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.testimonials-left {
+    height: 100vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFF804;
+}
+
+.testimonials-left p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.pagination button {
+    border-radius: 500px;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination button.active-btn {
+    background-color: black;
+    color: white;
+}
+
+#testimonials a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+}
+
+.testimonial-content > div {
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: transform 1s ease, opacity 0.5s ease;
+}
+
+.testimonial-content > .active {
+    opacity: 1; /* Show the active testimonial */
+    transform: translateX(0); /* Slide into place */
+    position: relative;
+}
+
 
 
 
