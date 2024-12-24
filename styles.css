@@ -21,6 +21,13 @@ a {
     color: #FFF;
 }
 
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
 .subheading {
     font-family: 'DM Sans', sans-serif;
     text-transform: uppercase;
@@ -29,7 +36,7 @@ a {
     border: 2px solid black;
     font-weight: 600;
     padding: 0.3rem 0.5rem;
-    width: 12rem;
+    font-size: 0.8rem;
 }
 
 .primary-btn {
@@ -73,6 +80,21 @@ nav ul li a{
     padding: 0rem 1rem;
 }
 
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#hero .heading {
+    align-items: baseline;
+}
+
+#hero h1 {
+    line-height: 60px;
+    font-weight: 600;
+}
+
 .hero-right {
     display: flex;
     flex-direction: column;
@@ -94,17 +116,7 @@ nav ul li a{
 }
 
 /* About */
-.box {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    padding: 2rem 1rem;
-}
-
-#about p {
-    text-align: center;
-}
-
-.about-left, .about-right {
+.about-column {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,33 +125,40 @@ nav ul li a{
     padding: 5rem 2rem;
 }
 
-.about-left {
+.about-column-left {
     background-color: #FFF804;
     border-bottom: 2px solid black;
 }
 
-.about-right {
+.about-column-right {
     background-color: #81836C;
 }
 
-.about-right img, .about-left img {
+.about-column img {
     width: 95%;
 }
 
-.b {
+.about-highlight {
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 2rem 1rem;
+}
+
+.bottom {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
-    background-color: black;
-    color: white;
+    gap: 1rem;
+    color: #FFF;
+    background-color: #000;
 }
 
-.b a {
+.bottom a {
     text-transform: uppercase;
-    color: white;
-    font-family: 'DM Sans';
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 /* Services */
@@ -147,11 +166,7 @@ nav ul li a{
     margin-top: 4rem;
 }
 
-.services-heading {
-    gap: 2rem;
-}
-
-.services-heading h2, .branding span {
+#services .heading h2, .branding span {
     font-size: 2.5rem;
     text-transform: uppercase;
     -webkit-text-stroke: 2px;
@@ -161,6 +176,8 @@ nav ul li a{
 .services-left img {
     width: 80%;
     border: 2px solid black;
+    transform: rotate(-5deg);
+
 }
 
 .services-left {
@@ -366,7 +383,11 @@ td div {
     gap: 2rem;
     padding: 2rem 1rem;
 }
-
+#vinyl-studio .subheading {
+    background-color: #000;
+    color: #FFF;
+    border: 2px solid #FFF;
+}
 #vinyl-studio img {
     width: 95%;
 }
@@ -423,11 +444,15 @@ footer ul li a{
     font-size: 1.5rem;
 }
 
-
 .footer-bottom {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.footer-link-container h3 {
+    margin-bottom: 1rem;
+
 }
 
 .legal {

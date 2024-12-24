@@ -27,53 +27,70 @@
     </nav>
 
     <section id="hero">
-        <button class="subheading">Why Qrates</button>
         <div class="hero-left">
-            <h1>Your music on vinyl. <br>Without the barriers.</h1>
+    
+            <div class="heading">
+                <div class="subheading">Why Qrates</div>
+                <h1>Your music on vinyl. <br>Without the <span class="underline">barriers</span></h1>
+            </div>
+    
             <p>Full-service pressing, a global retail network, customer
-                support - and you keep up to 85% of profits.
+                support - and you keep up to 85% of profits. 
+                <span>
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="#000" d="M12 5.5a.5.5 0 0 1 .5.5v10.793l4.146-4.147a.5.5 0 0 1 .708.708l-5 5a.5.5 0 0 1-.708 0l-5-5a.5.5 0 0 1 .708-.708l4.146 4.147V6a.5.5 0 0 1 .5-.5" />
+                    </svg>
+                </span>
             </p>
         </div>
         
         <div class="hero-right">
-            <img src="images/vinyls.jpg" alt="vinyls" class="hero-img-1">
-            <img src="images/woman-with-record.jpg" alt="woman with record" class="hero-img-2">
+            <img src="images/vinyls.jpg" alt="Vinyl records" class="hero-img-1">
+            <img src="images/woman-with-record.jpg" alt="Woman holding a record" class="hero-img-2">
         </div>
     </section>
+    
 
     <section id="about">
-        <div class="box"><p>No matter where you're at in you career, we've got a model to suit you.</p></div>
-        
+        <div class="about-highlight">
+            <p>No matter where you're at in your career, we've got a model to suit you.</p>
+        </div>
+    
         <div class="about-content">
-            <div class="about-left">
-                <button class="subheading">No risk, no waste</button>
-                <h2>Crowdfunding</h2>
+            <div class="about-column about-column-left">
+                <div class="heading">
+                    <h3 class="subheading">No risk, no waste</h3>
+                    <h2>Crowdfunding</h2>
+                </div>
                 <p>Rally your fans and gather pledges. Press the exact number of records you need, without having to pay upfront.</p>
-                <img src="images/doodle-1.png" alt="">
-                <button class="primary-btn">Learn more</button>
+                <img src="images/doodle-1.png" alt="Doodle illustration of crowdfunding">
+                <button class="primary-btn" aria-label="Learn more about crowdfunding">Learn more</button>
             </div>
-            <div class="about-right">
-                <button class="subheading">Get into it</button>
-                <h2>Press & Sell</h2>
+    
+            <div class="about-column about-column-right">
+                <div class="heading">
+                    <h3 class="subheading">Get into it</h3>
+                    <h2>Press & Sell</h2>
+                </div>
                 <p>Launch your record, sooner. Take pre-orders from fans and we'll take care of the rest.</p>
-                <img src="images/doodle-2.png" alt="">
-                <button class="primary-btn">Learn more</button>
+                <img src="images/doodle-2.png" alt="Doodle illustration of pressing and selling records">
+                <button class="primary-btn" aria-label="Learn more about press and sell">Learn more</button>
             </div>
         </div>
-
-        <div class="box b">
+    
+        <div class="about-highlight bottom">
             <p>Just after straight up vinyl pressing? We do that too. Records are shipped in bulk to wherever you need.</p>
-            <a href="#">Start a press only project</a>
+            <a href="#" role="button" class="primary-link">Start a press-only project</a>
         </div>
-
     </section>
-
+    
     <section id="services">
         <div class="services-left">
-            <div class="services-heading">
-                <div class="subheading">Our services</div>
+            <div class="heading">
+                <h3 class="subheading">Our services</h3>
                 <h2>You make the music. <br> We do the rest.</h2>
-            </div>   
+            </div>
+
             <div>
                 <img src="/images/man-on-keyboard.jpg" alt="man-on-keyboard">
                 <p>
@@ -171,10 +188,11 @@
     <section id="network">
         <div class="network-left">
             <div><img src="/images/records.png" alt=""></div>
+            
             <div class="network-text">
                 <div class="subheading">Retail Network</div>
                 <h2>Worldwide distro, <br>demystified.</h2>
-                <p>Get distrect access to over 150 of our reatil partners
+                <p>Get direct access to over 150 of our reatil partners
                     across the globe.
                 </p>
             </div>
@@ -194,11 +212,14 @@
     </section>
 
     <section id="community">
-        <div class="subheading">Community</div>
-        <h2>Join a growing community.</h2>
+        <div class="heading">
+            <div class="subheading">Community</div>
+            <h2>Join a growing community.</h2>
+        </div>
+
         <p>
             We're building a home for the next generation of vinyl lovers. <br>
-            Get in fronnt of fans, connect with artists, labels and stores.
+            Get in front of fans, connect with artists, labels and stores.
         </p>
         <button class="primary-btn">
             Browse artists
@@ -262,7 +283,7 @@
     </section>
 
     <section id="vinyl-studio">
-        <div>
+        <div class="heading">
             <div class="subheading">Vinyl Studio</div>
             <h2>Make it real with <br>Qrates Vinyl Studio</h2>
         </div>
@@ -353,7 +374,7 @@
         </div>
         
     </footer>
-    
+    <script type="module" src="script.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

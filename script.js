@@ -1,3 +1,17 @@
+// Underline animation
+
+import { annotate } from 'https://unpkg.com/rough-notation?module';
+
+const e = document.querySelector('.underline');
+const annotation = annotate(e, { type: 'underline' });
+annotation.show();
+
+
+
+
+
+
+// Testimonial switcher
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.pagination button');
     const testimonials = document.querySelectorAll('.testimonial-content > div');
