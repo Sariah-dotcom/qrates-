@@ -16,6 +16,10 @@ p, a {
     font-family: 'DM Sans', sans-serif;
 }
 
+li {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
     color: #FFF;
@@ -47,34 +51,85 @@ a {
     border: none;
     font-weight: 600;
     border-radius: 5rem;
-    padding: 0.8rem 5rem;
+    padding: 0.8rem 3rem;
 }
 
 /* Nav */
-
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 2rem 1rem;
+    justify-content: space-between;
+    padding: 1rem 1rem 3rem;
     width: 100vw;
+    position: relative;
 }
 
-.desktop-menu {
-    display: none;
+.logo {
+    height: 3rem;
+    width: 3rem;
 }
 
-nav ul {
+.cta {
     display: flex;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 1rem;
 }
 
-nav ul li {
-    list-style: none;
+nav .primary-btn {
+    padding: 1rem;
 }
 
-nav ul li a{
-    text-decoration: none;
+.cta a {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+}
+
+.menu-icon {
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+}
+
+.nav-links {
+    position: fixed;
+    background-color: #000;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 90%;
+    z-index: 1;
+    transition: transform 0.5s ease;
+}
+
+.close {
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 4rem;
+}
+
+.nav-links.show {
+    transform: translateX(-100%); /* Slide into view */
+}
+
+.nav-links.hidden {
+    transform: translateX(0); /* Hidden */
+}
+
+.nav-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.nav-links a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 
@@ -82,6 +137,7 @@ nav ul li a{
 #hero {
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
     gap: 3rem;
     padding: 0rem 1rem;
 }
@@ -425,6 +481,7 @@ td div {
     padding: 2rem 1rem;
     background-color: #000;
     color: #fff;
+    margin-top: -0.3rem;
 }
 
 .footer-top {
@@ -462,7 +519,8 @@ td div {
 
 .footer-branding {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
     text-align: center;
 }
 

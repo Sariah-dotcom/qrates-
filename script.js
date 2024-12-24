@@ -1,14 +1,25 @@
-// Underline animation
+//Mobile menu
+const menuIcon = document.querySelector('.menu-icon');
+const navLinks = document.querySelector('.nav-links');
+const closeIcon = document.querySelector('.close');
 
+// Toggle navigation visibility
+menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+    navLinks.classList.toggle('hidden');
+});
+
+closeIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+    navLinks.classList.toggle('hidden');
+});
+
+// Underline animation
 import { annotate } from 'https://unpkg.com/rough-notation?module';
 
 const e = document.querySelector('.underline');
 const annotation = annotate(e, { type: 'underline' });
 annotation.show();
-
-
-
-
 
 
 // Testimonial switcher
