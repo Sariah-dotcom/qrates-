@@ -12,29 +12,13 @@ h1 {
     font-size: 3rem;
 }
 
-p {
+p, a {
     font-family: 'DM Sans', sans-serif;
 }
 
-/* Nav */
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
-    gap: 0.5rem;
-}
-
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a{
+a {
     text-decoration: none;
+    color: #FFF;
 }
 
 .subheading {
@@ -58,6 +42,28 @@ nav ul li a{
     border-radius: 5rem;
     padding: 0.8rem 5rem;
 }
+
+/* Nav */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 0.5rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
 
 /* Hero */
 #hero, #services {
@@ -142,13 +148,10 @@ nav ul li a{
 }
 
 .services-heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 2rem;
 }
 
-.services-heading h2 {
+.services-heading h2, .branding span {
     font-size: 2.5rem;
     text-transform: uppercase;
     -webkit-text-stroke: 2px;
@@ -223,10 +226,6 @@ td div {
 }
 
 .network-left, .network-right, .network-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     padding: 1rem 1rem 5rem 1rem;
     gap: 2rem;
 }
@@ -242,8 +241,6 @@ td div {
 
 /* Community */
 #community {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 2rem;
@@ -316,8 +313,6 @@ td div {
 .testimonials-left {
     height: 100vh;
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     background-color: #FFF804;
 }
@@ -363,7 +358,91 @@ td div {
     position: relative;
 }
 
+#vinyl-studio {
+    background-color: #000;
+    color: white;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+#vinyl-studio img {
+    width: 95%;
+}
+
+#vinyl-studio .primary-btn {
+    background-color: #FFF804;
+    color: #000;
+}
+
+.footer-link-container, .footer-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top {
+    gap: 4rem;
+}
+
+.footer-link-container h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 3rem 1rem;
+    background-color: #000;
+    color: #FFF;
+}
+
+ul {
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a{
+    color: #FFF;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+}
+
+.branding, .branding span {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
 
 
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
+.legal {
+    font-size: 0.5rem;
+}
+
+#community, #vinyl-studio, .testimonials-left, .network-left, .network-right, .network-text, .services-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonials-left {
+    text-align: left;
+    align-items: baseline;
+}
 
