@@ -107,6 +107,10 @@ nav .primary-btn {
     transition: transform 0.5s ease;
 }
 
+.nav-links-desktop {
+    display: none;
+}
+
 .close {
     color: #FFF;
     cursor: pointer;
@@ -142,6 +146,10 @@ nav .primary-btn {
     .menu-icon {
         display: none;
     }
+
+    .nav-links-desktop {
+        display: inline;
+    }
     
     .nav-links-desktop a{
         color: #000;
@@ -159,7 +167,6 @@ nav .primary-btn {
         color: #81836C;
     }
 }
-
 
 /* Hero */
 #hero {
@@ -232,7 +239,6 @@ nav .primary-btn {
         margin-left: -55%;
         transform: rotate(-10deg);
     }
-
     
 }
 
@@ -323,7 +329,7 @@ nav .primary-btn {
     
 }
 
-/* Services */
+/* Services Section */
 #services {
     display: flex;
     flex-wrap: wrap;
@@ -481,15 +487,18 @@ nav .primary-btn {
 
 
 /* Community Section*/
-#community {
-    align-items: center;
-    text-align: center;
+.community-top {
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
-    margin-top: 3rem;
+    padding: 5rem;
 }
 
 .grid {
-    border-bottom: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #000;
+    border-top: 1px solid #000;
 }
 
 .grid-left {
@@ -543,6 +552,18 @@ nav .primary-btn {
     100% {
         transform: translateX(-100%);
     }
+}
+
+@media screen and (min-width:768px) {
+    .grid {
+        flex-direction: row;
+    }
+
+    .grid-right, .grid-left{
+        height: 50%;
+        width: 50%;
+    }
+    
 }
 
 /* Testimonials */
