@@ -17,9 +17,13 @@ closeIcon.addEventListener('click', () => {
 // Underline animation
 import { annotate } from 'https://unpkg.com/rough-notation?module';
 
-const e = document.querySelector('.underline');
-const annotation = annotate(e, { type: 'underline' });
-annotation.show();
+const text = document.querySelector('.underline');
+const annotation1 = annotate(text, { type: 'underline' });
+annotation1.show();
+
+const text2 = document.querySelector('.underline-2')
+const annotation2 = annotate(text2, {type: 'underline', color: 'white'});
+annotation2.show();
 
 // Accordion
 const expandBtns = document.querySelectorAll("#expand-btn");

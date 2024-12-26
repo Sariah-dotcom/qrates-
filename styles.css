@@ -59,6 +59,17 @@ a {
     padding: 0.8rem 3rem;
 }
 
+.primary-btn:hover {
+    cursor: pointer;
+    background-color: #5c5c5b;
+}
+
+@media screen and (min-width: 768px) {
+    .primary-btn {
+        padding: 1rem 5rem;
+    } 
+}
+
 /* Nav */
 nav {
     display: flex;
@@ -163,8 +174,12 @@ nav .primary-btn {
         gap: 3rem;
     }
 
-    .nav-links-desktop a:hover {
+    .nav-links-desktop a:hover, .cta a:hover{
         color: #81836C;
+    }
+
+    nav .primary-btn {
+        padding: 1rem 5rem;
     }
 }
 
@@ -649,8 +664,7 @@ nav .primary-btn {
     .testimonials-left, .testimonials-right {
         height: 120vh;
         width: 50%;
-    }
-    
+    } 
 }
 
 /* Vinyl Studio Section */
@@ -659,8 +673,12 @@ nav .primary-btn {
     color: white;
     align-items: center;
     text-align: center;
-    gap: 2rem;
-    padding: 2rem 1rem;
+    gap: 3rem;
+    padding: 5rem 1rem;
+}
+
+#vinyl-studio .heading h2 {
+    line-height: 40px;
 }
 
 #vinyl-studio .subheading {
@@ -676,6 +694,17 @@ nav .primary-btn {
 #vinyl-studio .primary-btn {
     background-color: #FFF804;
     color: #000;
+}
+
+@media screen and (min-width: 768px) {
+    #vinyl-studio {
+        padding: 10rem;
+        gap: 5rem;
+    }
+    
+    #vinyl-studio img {
+        width: 60%;
+    }
 }
 
 /* Footer */
