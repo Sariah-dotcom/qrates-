@@ -21,6 +21,17 @@ const e = document.querySelector('.underline');
 const annotation = annotate(e, { type: 'underline' });
 annotation.show();
 
+// Accordion
+const expandBtns = document.querySelectorAll("#expand-btn");
+const accordionContents = document.querySelectorAll(".accordion-content");
+
+// Loop through each button and add an event listener
+expandBtns.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        accordionContents[index].classList.toggle("slide-in");
+        btn.classList.toggle("rotate");
+    });
+});
 
 // Testimonial switcher
 document.addEventListener('DOMContentLoaded', () => {
