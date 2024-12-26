@@ -352,7 +352,7 @@ nav .primary-btn {
     gap: 3rem;
 }
 
-#services .heading h2, .branding span {
+#services .heading h2, .footer-branding span {
     font-size: 2.5rem;
     text-transform: uppercase;
     -webkit-text-stroke: 2px;
@@ -711,8 +711,8 @@ nav .primary-btn {
 .footer {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
-    padding: 2rem 1rem;
+    gap: 15rem;
+    padding: 3rem 1rem;
     background-color: #000;
     color: #fff;
     margin-top: -0.3rem;
@@ -754,8 +754,11 @@ nav .primary-btn {
 .footer-branding {
     text-transform: uppercase;
     font-size: 1.8rem;
-    font-weight: 700;
     text-align: center;
+}
+
+.footer-branding p {
+    font-weight: 800;
 }
 
 .footer-social-icons {
@@ -774,6 +777,41 @@ nav .primary-btn {
     color: #fff;
     margin: 0 0.5rem;
     text-decoration: none;
+}
+
+.footer-legal a:hover, .footer-section li a:hover {
+    color: #81836C;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 4rem 3rem;
+    }
+
+    .footer-top {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 0rem;
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .footer-branding {
+        text-align: left;
+    }
+
+    .footer-social-icons {
+        justify-content: right;
+    }
+
+    .footer-branding p {
+        font-size: 2rem;
+    }
+ 
 }
 
 
